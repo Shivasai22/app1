@@ -1,13 +1,20 @@
+
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { AppModule } from './app.module';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [CommonModule, RouterOutlet,AppModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'app1';
+title = 'app1';
+currentdate= new Date()
+emp={name:'Shiva',age:'23',cource:'Computer Science'}
+x="Angular";
+num=11200
 }
